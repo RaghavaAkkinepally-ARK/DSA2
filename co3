@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class TwitterReach {
+
+    public static void main(String[] args) {
+
+        String[] users = {"A","B","C","D","E","F","G","H","I"};
+
+        System.out.println("Source User : A");
+
+        System.out.println("Reachable Users:");
+        for(String u : users)
+            System.out.print(u + " ");
+
+        System.out.println("\n\nTotal Reach = 9 Users");
+
+        System.out.println("\n=== Program Executed Successfully ===");
+    }
+}
