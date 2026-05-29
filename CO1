@@ -1,0 +1,33 @@
+import java.util.TreeSet;
+
+public class MediFlowHospital {
+    public static void main(String[] args) {
+
+        TreeSet<Integer> patients = new TreeSet<>();
+
+        int[] ids = {20, 30, 35, 40, 45, 50, 60, 65, 70, 75, 80, 85, 90};
+
+        for (int id : ids) {
+            patients.add(id);
+        }
+
+        System.out.println("Receipt IDs:");
+        for (int id : patients) {
+            System.out.print(id + " ");
+        }
+
+        patients.remove(30);
+        patients.remove(70);
+        patients.remove(50);
+
+        System.out.println("\n\nAfter Deletions (30,70,50):");
+        for (int id : patients) {
+            System.out.print(id + " ");
+        }
+
+        System.out.println("\n\nSearch Patient ID 65 : "
+                + (patients.contains(65) ? "Found" : "Not Found"));
+
+        System.out.println("\n=== Program Executed Successfully ===");
+    }
+}
